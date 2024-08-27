@@ -7,10 +7,10 @@ export default function InsuranceHistoryPage() {
 	const goToInsuranceReportPage = () => {
 		navigate('/insurance-report')
 	}
-	const goToInsuranceEvents = () => {
+	const goToInsuranceEventsPage = () => {
 		navigate('/insurance-events')
 	}
-	const goToInsurancePolicy = () => {
+	const goToInsurancePolicyPage = () => {
 		navigate('/insurance-policy')
 	}
 	const goToRequestHistory = () => {
@@ -26,11 +26,11 @@ export default function InsuranceHistoryPage() {
 							Страховой отчет
 						</CardWrapper>
 
-						<CardWrapper onClick={goToInsuranceEvents} className="insurance-history__menu-button">
+						<CardWrapper onClick={goToInsuranceEventsPage} className="insurance-history__menu-button">
 							Проверка страховых событий
 						</CardWrapper>
 
-						<CardWrapper onClick={goToInsurancePolicy} className="insurance-history__menu-button">
+						<CardWrapper onClick={goToInsurancePolicyPage} className="insurance-history__menu-button">
 							Страховой полис
 						</CardWrapper>
 

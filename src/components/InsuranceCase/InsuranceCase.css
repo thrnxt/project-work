@@ -1,0 +1,72 @@
+.insurance-case {
+    font-size: 14px;
+    color: #333;
+    margin-top: 31px;
+}
+.insurance-case__header{
+    margin-bottom: 7px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0 24px;
+
+}
+.insurance-case__header-active{
+    background:white;
+    color: var(--dark-blue-color);
+    border-bottom: 1px solid var(--blue-color);
+    margin-bottom: 11px;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.insurance-case__title, .insurance-case__title-number{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.09px;
+    text-align: left;
+}
+.insurance-case__registration-section{
+    margin-top: 7px;
+}
+.insurance-case__registration-header{
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15.23px;
+    text-align: left;
+    text-decoration: underline;
+}
+.insurance-case__registration-container{
+    margin: 63px 0px;
+}
+.insurance-case__registration-section{
+    margin-top: 11px;
+}
+.insurance-case__registration-item{
+    margin-top: 3px;
+}
+
+.insurance-case__registration-title{
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 11.72px;
+    text-align: left;
+}
+.insurance-case__registration-date{
+    font-size: 8px;
+    font-weight: 300;
+    line-height: 9.38px;
+    text-align: left;
+}
+.insurance-case__see-more{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 17.58px;
+    text-align: left;
+    color: #F79F2B;
+    background: none;
+    border:none;
+    margin-top: 15px;
+}

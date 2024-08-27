@@ -1,73 +1,20 @@
-import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import './InsuranceReportPage.css';
 import CardWrapper from './../../components/CardWrapper/CardWrapper';
 import Container from '../../components/Container/Container';
 import Footer from '../../components/Footer/Footer';
+import InsuranceCase from "../../components/InsuranceCase/InsuranceCase";
+import { insuranceCasesData } from "../../data";
+import {insurancePoliciesData} from "../../data";
+import BonusMalus from './../../components/BonusMalus/BonusMalus';
 
-const RegistrationItem = ({ title, date }) => (
-    <div className="insurance-case__registration-item">
-        <p className="insurance-case__registration-title">{title}</p>
-        <p className="insurance-case__registration-date">{date}</p>
-    </div>
-);
-
-function InsuranceReportPage() {
-    const insuranceCases = [
-        {
-            caseNumber: '12121212',
-            registrations: [
-                { id: 1, title: 'Дата регистрации СС', date: '01.01.2022' },
-                { id: 2, title: 'Дата регистрации заявления СС', date: '01.01.2022' },
-                { id: 3, title: 'Дата регистрации документов СС', date: '01.01.2022' },
-                { id: 4, title: 'Дата регистрации экспертиз СС', date: '01.01.2022' },
-                { id: 5, title: 'Дата регистрации заключений СС', date: '01.01.2022' },
-                { id: 6, title: 'Дата регистрации выплат СС', date: '01.01.2022' }
-            ]
-        },
-        {
-            caseNumber: '34343434',
-            registrations: [
-                { id: 1, title: 'Дата регистрации СС', date: '01.02.2022' },
-                { id: 2, title: 'Дата регистрации заявления СС', date: '01.02.2022' },
-                { id: 3, title: 'Дата регистрации документов СС', date: '01.02.2022' },
-                { id: 4, title: 'Дата регистрации экспертиз СС', date: '01.02.2022' },
-                { id: 5, title: 'Дата регистрации заключений СС', date: '01.02.2022' },
-                { id: 6, title: 'Дата регистрации выплат СС', date: '01.02.2022' }
-            ]
-        },
-
-    ];
-    const insurancePolicies = [
-        {
-            id: 1,
-            insuranceClass: 'ОС ГПО ВТС',
-            policyNumber: '1111А1111111А',
-            companyName: 'НСК',
-            policyDates: '27.07.2023 - 26.07.2024'
-        },
-        {
-            id: 2,
-            insuranceClass: 'Каско',
-            policyNumber: '2222B2222222B',
-            companyName: 'Росгосстрах',
-            policyDates: '01.01.2024 - 31.12.2024'
-        },
-        {
-            id: 3,
-            insuranceClass: 'noname',
-            policyNumber: '77777777777777',
-            companyName: 'Salut',
-            policyDates: '01.01.2024 - 31.12.2024'
-        }
-    ]
-
-
-    const [showAllCases, setShowAllCases] = useState(false);
-    const handleToggleCases = () => {
-        setShowAllCases(!showAllCases);
-    };
-    const casesToShow = showAllCases ? insuranceCases : insuranceCases.slice(0, 1);
+export default function InsuranceReportPage() {
+    const navigate = useNavigate();
+    const goToInsuranceAll = () => {
+        navigate('/insurance-active-cases')
+    }
+   
     return (
         <>
             <Header />
@@ -84,7 +31,7 @@ function InsuranceReportPage() {
                 </Container>
                 <CardWrapper className="report__table-header">
                     <span className="report__table-status">Активные:</span>
-                    <span className="report__table-number">{insurancePolicies.length}</span>
+                    <span className="report__table-number">{insurancePoliciesData.length}</span>
                 </CardWrapper>
                 <Container>
                     <table className="report__table">
@@ -97,7 +44,7 @@ function InsuranceReportPage() {
                             </tr>
                         </thead>
                         <tbody>
-                            {insurancePolicies.map((policy) => (
+                            {insurancePoliciesData.map((policy) => (
                                 <tr key={policy.id}>
                                     <td>{policy.insuranceClass}</td>
                                     <td>{policy.policyNumber}</td>
@@ -109,27 +56,12 @@ function InsuranceReportPage() {
                     </table>
                 </Container>
             </section>
-
-            <section className="insurance-case">
-                <CardWrapper className="insurance-case__header">
-                    <span className="insurance-case__title">Страховые случаи:</span>
-                    <span className="insurance-case__title-number">{insuranceCases.length}</span>
-                </CardWrapper>
-                {casesToShow.map((insuranceCase, index) => (
-                    <Container key={insuranceCase.caseNumber}>
-                        <span className="insurance-case__registration-header">{index + 1}. Номер страхового случая: {insuranceCase.caseNumber}</span>
-                        <div className="insurance-case__registration-section">
-                            {insuranceCase.registrations.map((item) => (
-                                <RegistrationItem key={item.id} title={item.title} date={item.date} />
-                            ))}
-                        </div>
-                    </Container>
-                ))}
-                {insuranceCases.length > 1 && <button className="insurance-case__see-more" onClick={handleToggleCases}>Показать все...</button>}
-            </section>
+            <InsuranceCase casesToShowValue={insuranceCasesData.slice(0, 1)}/>
+            <Container>
+                {insuranceCasesData.length > 1 && <button className="insurance-case__see-more" onClick={goToInsuranceAll}>Показать все...</button>}
+            </Container>
+            <BonusMalus value={'M'}/>
             <Footer />
         </>
     );
 };
-
-export default InsuranceReportPage;

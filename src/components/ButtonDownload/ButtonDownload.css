@@ -1,0 +1,13 @@
+.button-download{
+    background:var(--orange-color);
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 11.72px;
+    text-align: center;
+    width: 138.75px;
+    height: 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

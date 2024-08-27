@@ -11,7 +11,7 @@ export default function Header() {
 	};
 	const navigate = useNavigate();
 	function goToBack(){
-		navigate('/')
+		navigate(-1)
 	}
 
 	return (

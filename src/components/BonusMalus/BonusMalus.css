@@ -1,0 +1,139 @@
+.bonus-malus__progress-fill {
+    width: 0%; /* Это значение будет изменяться динамически */
+    height: 100%;
+    background-color: #f8a026; /* Цвет заливки */
+}
+
+.bonus-malus{
+    margin-top: 31px;
+    margin-bottom: 31px;
+}
+.bonus-malus__header {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.09px;
+    text-align: left;
+}
+
+.bonus-malus__description {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 17.58px;
+    text-align: left;
+}
+.bonus-malus__description span{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.09px;
+    text-align: left;
+    color:#404040;
+}
+
+.bonus-malus__content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bonus-malus__value {
+    margin-top: 12px;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42.19px;
+    text-align: center;
+    color: #404040;
+}
+/*  */
+.bonus-malus__info-item{
+    display: flex;
+    flex-direction: column;
+}
+.bonus-malus__info-label{
+    font-size: 10px;
+    color:#404040;
+    font-weight: 400;
+    line-height: 11.72px;
+    text-align: left;
+
+}
+.bonus-malus__info-value{
+    margin-top: 5px;
+    font-size: 8px;
+    font-weight: 300;
+    line-height: 9.38px;
+    text-align: left;
+    padding-left: 5px;
+}
+.bonus-malus__info-value-right{
+    text-align: right;
+    padding-right: 5px;
+}
+
+.bonus-malus__progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.bonus-malus__progress-label {
+    margin: 0 10px;
+    color: #404040;
+    font-size: 8px;
+    font-weight: 300;
+    line-height: 9.38px;
+    text-align: right;
+    width: 50px;
+    height: 10px;
+}
+
+.bonus-malus__progress-bar {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: #0097a7;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.bonus-malus__progress-fill {
+    width: 50%; 
+    height: 100%;
+    background-color: var(--orange-color);
+}
+
+.bonus-malus__info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #777777;
+}
+
+.bonus-malus__actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.bonus-malus__report-descr{
+    color: var(--dark-blue-color);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 17.58px;
+    text-align: left;
+
+}
+
+.bonus-malus__download-button {
+    background-color: #ff9800;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.bonus-malus__report-button:hover,
+.bonus-malus__download-button:hover {
+    opacity: 0.9;
+}
