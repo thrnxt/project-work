@@ -6,7 +6,7 @@ import Container from '../../components/Container/Container';
 import Footer from '../../components/Footer/Footer';
 import InsuranceCase from "../../components/InsuranceCase/InsuranceCase";
 import { insuranceCasesData } from "../../data";
-import {insurancePoliciesData} from "../../data";
+import {insurancePoliciesTableData} from "../../data";
 import BonusMalus from './../../components/BonusMalus/BonusMalus';
 
 export default function InsuranceReportPage() {
@@ -31,7 +31,7 @@ export default function InsuranceReportPage() {
                 </Container>
                 <CardWrapper className="report__table-header">
                     <span className="report__table-status">Активные:</span>
-                    <span className="report__table-number">{insurancePoliciesData.length}</span>
+                    <span className="report__table-number">{insurancePoliciesTableData.length}</span>
                 </CardWrapper>
                 <Container>
                     <table className="report__table">
@@ -44,7 +44,7 @@ export default function InsuranceReportPage() {
                             </tr>
                         </thead>
                         <tbody>
-                            {insurancePoliciesData.map((policy) => (
+                            {insurancePoliciesTableData.map((policy) => (
                                 <tr key={policy.id}>
                                     <td>{policy.insuranceClass}</td>
                                     <td>{policy.policyNumber}</td>

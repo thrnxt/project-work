@@ -9,10 +9,11 @@
 }
 
 :root {
-    --blue-color: #02BFC8;
-	--dark-blue-color:#067182;
-    --orange-color: #F79F2B;
+	--blue-color: #02BFC8;
+	--dark-blue-color: #067182;
+	--orange-color: #F79F2B;
 }
+
 .container {
 	margin: 0 auto;
 	max-width: 1200px;
@@ -24,23 +25,23 @@
 	.container {
 		max-width: 1140px;
 	}
-  }
-  
-  @media (max-width: 991px) {
+}
+
+@media (max-width: 991px) {
 	.container {
 		max-width: 960px;
 	}
-  }
-  
-  @media (max-width: 767px) {
+}
+
+@media (max-width: 767px) {
 	.container {
 		max-width: 720px;
 	}
-  }
-  
-  @media (max-width: 575px) {
+}
+
+@media (max-width: 575px) {
 	.container {
 		max-width: 540px;
 		margin: auto;
 	}
-  }
+}

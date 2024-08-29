@@ -1,0 +1,58 @@
+.insurance-policy {
+    margin-top: 19px;
+    margin-bottom: 16px;
+}
+
+.insurance-policy__header {
+    display: flex;
+    align-items: center;
+}
+.insurance-policy__count {
+    color: var(--orange-color);
+    font-weight: bold;
+    margin-right: 7px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.09px;
+    text-align: left;
+}
+
+.insurance-policy__wrapper{
+    justify-content: center;
+    align-items:center;
+    color: var(--orange-color);
+    display: flex;
+    border: 1px solid var(--orange-color);
+    width: 316px;
+    height: 33px;
+    border-radius: 7px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.13px;
+}
+.insurance-policy__number{
+    margin-right: 7px;
+}
+
+.insurance-policy__details {
+    margin-top: 11px;
+    color: #404040;
+}
+
+.insurance-policy__details-text{
+    margin-top: 10px;
+    justify-content: space-between;
+    display: flex;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 11.72px;
+}
+
+.insurance-policy__details-text span {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 11.72px;
+    text-align: left;
+
+
+}

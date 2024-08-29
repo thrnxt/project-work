@@ -1,0 +1,39 @@
+.insurance-policy__header{
+    display: flex;
+    justify-content: center;
+}
+.insurance-policy__description{
+    margin-top: 33px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 17.58px;
+    text-align: left;
+}
+.insurance-policy__description span{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.09px;
+    text-align: left;
+}
+.insurance-policy__card{
+    margin-top: 40px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0 24px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.09px;
+    text-align: left;
+}
+.insurance-policy__warning{
+    margin-top: 74px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 17.58px;
+    text-align: justify;
+    color: var(--dark-blue-color);
+    max-width: 341px;
+}

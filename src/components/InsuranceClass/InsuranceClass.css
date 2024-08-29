@@ -1,0 +1,165 @@
+.insurance-class {
+	margin: 0 auto;
+}
+
+.insurance-class {
+	max-width: 340px;
+}
+
+.insurance-class__field-group {
+	margin-top: 16px;
+}
+
+.insurance-class__label {
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 17.58px;
+	text-align: left;
+	color: var(--dark-blue-color);
+}
+
+.insurance-class__label span {
+	color: #D91407;
+}
+
+.insurance-class__input {
+	margin-top: 4px;
+	padding-left: 11px;
+	padding-right: 18px;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 14.06px;
+	border: 1px solid #FFFFFF;
+	color: #888B8B;
+	max-width: 342px;
+	min-height: 29px;
+	box-shadow: 0px 2px 4px 1px #00000040;
+	border-radius: 7px;
+}
+
+.insurance-class__input-text {
+	height: 29px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.insurance-class__arrow {
+	color: var(--blue-color);
+	display: block;
+	border: 6px solid transparent;
+	background: none;
+	transition: transform 0.3s ease;
+}
+
+.insurance-class__arrow-down {
+	border-top: 6px solid;
+	border-bottom: none;
+}
+
+.insurance-class__arrow-left {
+	border-left: none;
+	border-right: 6px solid;
+}
+
+.insurance-class__dropdown-menu {
+	list-style: none;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.insurance-class__dropdown-menu li {
+	height: 29px;
+	display: flex;
+	align-items: center;
+}
+
+.insurance-class__date-picker {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.insurance-class__line {
+	width: 12px;
+	height: 2px;
+	border: 1px solid #02BFC8;
+	background: var(--blue-color);
+}
+
+.insurance-class__input-data {
+	margin-top: 4px;
+	max-width: 160px;
+	height: 29px;
+	border-radius: 7px;
+	border: 1px solid #FFFFFF;
+	color: #888B8B;
+	box-shadow: 0px 2px 4px 1px #00000040;
+	border-radius: 7px;
+	padding-left: 12px;
+}
+
+.insurance-class__actions {
+	margin-top: 21px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.insurance-class__actions {
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 17.58px;
+	text-align: left;
+	color: var(--dark-blue-color);
+}
+
+
+
+/* style for calendar */
+.custom-date-picker {
+	display: flex;
+	flex-direction: column;
+}
+.react-datepicker__day--selected {
+	background-color: var(--blue-color) !important;
+}
+.react-datepicker__day--selected {
+	background-color: var(--blue-color) !important;
+}
+.react-datepicker-popper {
+	width: 180px !important;
+	border-radius: 8px;
+	box-shadow: 0px 2px 4px 1px #00000040;
+}
+.react-datepicker__month-container {
+	width: 180px !important;
+}
+.react-datepicker__header {
+	padding: 5px;
+	background-color: #FFFFFF !important;
+	border-bottom: none !important;
+}
+.react-datepicker__day-name,
+.react-datepicker__day {
+	width: 24px !important;
+	height: 24px !important;
+	line-height: 24px !important;
+	margin: 0 auto !important;
+	border-radius: 50% !important;
+	text-align: center !important;
+}
+.react-datepicker__day-name {
+	color: #222222 !important;
+}
+.react-datepicker__day {
+	color: #989393 !important;
+}
+.react-datepicker__day--today {
+	font-weight: bold;
+	color: #d91407 !important;
+	background-color: #ffffff !important;
+}
+.react-datepicker__day--selected{
+	color:#FFFFFF !important;
+}
+

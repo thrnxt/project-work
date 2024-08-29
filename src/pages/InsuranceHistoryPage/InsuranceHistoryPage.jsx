@@ -46,7 +46,7 @@ export default function InsuranceHistoryPage() {
 						ПОДПИСАТЬСЯ В ТЕЛЕГРАММ ДЛЯ УВЕДОМЛЕНИЙ
 					</a>
 					<div className="insurance-history__credit-bureau">
-						<img src="/img/footer-logo.svg" alt="" />
+						<img src="/img/footer-logo.png" alt="" />
 					</div>
 				</div>
 			</footer>

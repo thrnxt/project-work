@@ -3,18 +3,21 @@ import './BonusMalus.css';
 import CardWrapper from '../CardWrapper/CardWrapper';
 import Container from '../Container/Container';
 import ButtonDownload from '../ButtonDownload/ButtonDownload';
+import { useLocation } from 'react-router-dom';
 
 const calculateProgress = (value) => {
     if (value === "M") {
         return 3;
     }
-    const maxClass =13;
+    const maxClass = 13;
     const numericValue = parseInt(value, 10);
     return ((numericValue) / (maxClass)) * 100;
 };
 
 export default function BonusMalus({ value }) {
     const progress = calculateProgress(value);
+    const location = useLocation();
+    const isInsuranceReportPage = location.pathname === '/insurance-report' ? true : false;
     return (
         <div className="bonus-malus">
             <CardWrapper>
@@ -49,10 +52,14 @@ export default function BonusMalus({ value }) {
                         <span className="bonus-malus__info-value bonus-malus__info-value-right">STANDARD</span>
                     </div>
                 </div>
-                <div className="bonus-malus__actions">
+
+                {isInsuranceReportPage && (
+                    <div className="bonus-malus__actions">
                     <div className="bonus-malus__report-descr">Получить страховой отчет</div>
                     <ButtonDownload/>
                 </div>
+                ) }
+               
             </Container>
         </div>
     );

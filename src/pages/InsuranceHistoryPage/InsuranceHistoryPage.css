@@ -55,6 +55,8 @@
     position: absolute;
     bottom: 22px;
     left: 24px;
+    width: 175px;
+    height: 24px;
 }
 
 @media (max-height:800px) {

@@ -7,7 +7,7 @@ import InsurancePolicyPage from './pages/InsurancePolicyPage/InsurancePolicyPage
 import InsuranceEventsPage from './pages/InsuranceEventsPage/InsuranceEventsPage'
 import RequestHistory from './pages/RequestHistory/RequestHistory'
 import InsuranceActiveCasesPage from './pages/InsuranceActiveCasesPage/InsuranceActiveCasesPage'
-function App() {
+export default function App() {
   return (
     <div className="App">
         <Routes>
@@ -23,4 +23,3 @@ function App() {
   );
 }
 
-export default App;

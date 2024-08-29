@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './Header.css'
 import { useNavigate } from 'react-router-dom';
+import ArrowVertical from '../ArrowVertical/ArrowVertical';
 export default function Header() {
 	const [userName, setUserName] = useState('Иванов Иван Иванович')
 	const [iin, setIin] = useState("ИИН")
@@ -24,7 +25,7 @@ export default function Header() {
 			</div>
 			<button onClick={toggleArrow} className="header__language-selector-btn">
 				<div className="header__language-selected">{language}</div>
-				<div  className={`arrow ${isDown ? "down" : "up"}`}></div>
+				<ArrowVertical isClick={isDown}/>
 			</button>
 		</header>
 	);

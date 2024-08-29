@@ -1,0 +1,37 @@
+.insurance-class__check-container{
+    align-items:center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+}
+.insurance-class__check-title {
+    margin-top: 33px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.09px;
+    text-align: left;
+    color: var(--dark-blue-color);
+}
+
+.insurance-class__check-input {
+    margin-top: 17px;
+    padding-left: 3px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.06px;
+    text-align: left;
+    min-height: 29px;
+    border: 1px solid #FFFFFF;
+	color: #888B8B;
+	box-shadow: 0px 2px 4px 1px #00000040;
+	border-radius: 7px;
+    width: 330px;
+}
+
+.insurance-class__card-title {
+    margin-top: 33px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.09px;
+    text-align: left;
+}

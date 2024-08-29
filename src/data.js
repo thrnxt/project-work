@@ -1,5 +1,5 @@
 // insurance report page 
- export const insuranceCasesData = [
+export const insuranceCasesData = [
     {
         caseNumber: '12121212',
         registrations: [
@@ -46,10 +46,9 @@
     },
     
 
+
 ];
-
-
-export const insurancePoliciesData = [
+export const insurancePoliciesTableData = [
     {
         id: 1,
         insuranceClass: 'ОС ГПО ВТС',
@@ -70,5 +69,58 @@ export const insurancePoliciesData = [
         policyNumber: '77777777777777',
         companyName: 'Salut',
         policyDates: '01.01.2024 - 31.12.2024'
-    }
-]
+    },
+    
+    
+];
+export const insurancePoliciesData = [
+    {
+        id: 1,
+        count: 1,
+        number: '777AAA02',
+        companyName: 'НСК',
+        policyNumber: '1111A111111A',
+        model: 'BMW',
+        grnz: '777AAA02',
+        dateTime: '27.07.2023 17:07:07',
+        startDate: '28.07.2023',
+        endDate: '27.07.2024',
+    },
+    {
+        id: 2,
+        count: 2,
+        number: '888BBB03',
+        companyName: 'ИНГОССТРАХ',
+        policyNumber: '2222B222222B',
+        model: 'Mercedes',
+        grnz: '888BBB03',
+        dateTime: '15.08.2023 12:00:00',
+        startDate: '16.08.2023',
+        endDate: '15.08.2024',
+    },
+    {
+        id: 2,
+        count: 2,
+        number: '888BBB03',
+        companyName: 'ИНГОССТРАХ',
+        policyNumber: '2222B222222B',
+        model: 'Mercedes',
+        grnz: '888BBB03',
+        dateTime: '15.08.2023 12:00:00',
+        startDate: '16.08.2023',
+        endDate: '15.08.2024',
+    },
+];
+
+// insurance events page 
+export const insuranceClassesData1 = [
+    'ОС ГПО ВТС',
+    'Иные обязательные виды',
+];
+export const insuranceClassesData2 = [
+    'ОС ГПО ВТС',
+    'КАСКО',
+    'ДСАГО',
+    'Страхование пассажиров',
+    'Иные обязательные виды',
+];
